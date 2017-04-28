@@ -1,0 +1,8 @@
+<div>
+<% @accounts.each do |a| %>
+      		<%= a.name %><span> </span>
+      		<%= a.balance %><span>   </span>
+      		<%= a.money_type%><span>    </span>
+      		<button><%= link_to "delete", a, method: :delete, class:"a_link" %></button><br>
+<% end %>
+</div>

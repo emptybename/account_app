@@ -1,0 +1,9 @@
+	
+<div>
+<%= form_for @account do |f| %>
+	Name:       <%= f.text_field :name %>
+	Money_Type: <%= f.text_field :money_type %>
+	Balance:    <%= f.number_field :balance , step: 'any' %>
+	<%= f.submit "create" %>
+<% end %>
+</div>

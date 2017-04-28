@@ -1,0 +1,9 @@
+<%= form_for :transac, url: home_path do |f| %>
+		<ul style="list-style:none;">
+			<li><%= f.select(:search_type, options_for_select(["Tags",
+			"Accounts"]),{prompt: "Search_type" }) %></li>
+			<li id="tag_type"><%= f.select(:tag_type, options_for_select([["abc","abc"],["cde","cde"],["fgh","fgh"]]),{prompt:"Tag_type"})%></li>
+			<li id="from_account_id"><%= f.select(:from_account_id, options_for_select(@account_map),{prompt: "From_account"})%></li>
+			<li><%= f.submit "search" %></li>
+		</ul>
+<% end %>

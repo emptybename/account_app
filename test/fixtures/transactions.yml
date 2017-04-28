@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  transaction_type: MyString
+  tag_type: MyString
+  amount: 1.5
+  date_of_transaction: 2016-07-13
+  description: MyText
+
+two:
+  transaction_type: MyString
+  tag_type: MyString
+  amount: 1.5
+  date_of_transaction: 2016-07-13
+  description: MyText

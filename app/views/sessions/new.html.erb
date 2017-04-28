@@ -1,0 +1,11 @@
+<% provide(:title, "login") %>
+<div class="row">
+<div class="col-md-4 col-md-offset-4">
+<%= form_for :session, url: login_path do |f| %>
+		Email: <%= f.email_field :email %><br>
+		Password: <%= f.password_field :password %><br>
+		<%= f.submit "login" %><br>
+<% end %>
+For New User: <%= link_to "Register", signup_path,class:"login_register" %>
+</div>
+</div>

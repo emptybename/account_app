@@ -1,0 +1,12 @@
+<% provide(:title, "create account")%>
+
+<div class="row">
+<div class="col-md-2 col-md-offset-0">
+<%= form_for @account do |f| %>
+	Name:       <%= f.text_field :name %>
+	Money_Type: <%= f.text_field :money_type %>
+	Balance:    <%= f.number_field :balance , step: 'any' %>
+	<%= f.submit "create" %>
+<% end %>
+</div>
+</div>

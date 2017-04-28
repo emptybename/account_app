@@ -1,0 +1,12 @@
+<% @transactions.each do |t| %>
+	<%= t.transaction_type %>
+	<%= t.amount %>
+	<%= t.from_account.name %>
+	<%= t.to_account.name if t.transaction_type == "transfer" %>
+		<%#= t.to_account.name %>
+	<%= t.tag_type unless t.tag_type.blank? %>
+	<%= t.description unless t.description.blank? %>
+	<%= t.date_of_transaction %>
+	<button><%= link_to "edit", edit_transaction_path(t),method: :get %></button>
+	<button><%= link_to "delete", t, method: :delete %></button><br>
+<% end %>

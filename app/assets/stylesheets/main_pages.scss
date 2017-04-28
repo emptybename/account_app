@@ -1,0 +1,103 @@
+// Place all the styles related to the MainPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+// Place all the styles related to the Transactions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+.page-header{
+	background-color:red;
+	//margin-left:30px;
+	//padding-top:10px;
+	//height:40px;
+}
+ul{
+	//margin-left:50px;
+	//padding-top:10px;
+	//padding-left:40px;
+	//border-radius:4px;
+
+
+}
+.hello{
+	border-radius:3px;
+}
+li{
+		padding-left:3px;	
+
+	}
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  //margin-right: px;
+ //margin:0px;
+  height: 25px;
+  @include box_sizing;
+}
+.transaction_form{
+	margin-top:1%;;
+	margin-left:4%;
+}
+.logo {
+	margin-top:5px;
+	font-size:200%;
+	font-family:fantasy;
+	
+	a{
+		text-decoration:none;
+	}
+
+}
+.create_account{
+	outline:none;
+}
+.log_out{
+	font-size:150%;
+	font-family:fantasy;
+}
+
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+

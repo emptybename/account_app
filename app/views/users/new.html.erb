@@ -1,0 +1,13 @@
+<% provide(:title,"signup")%>
+<div class="row">
+<div class="col-md-4 col-md-offset-4">
+<%= form_for @user, url: 'signup' do |f| %>
+		Name: <%= f.text_field :name %><br>
+		Email: <%= f.email_field :email %><br>
+		Password: <%= f.password_field :password %><br>
+		Confirm Password: <%= f.password_field :password_confirmation %><br>
+		<%= f.submit "create" %><br>
+<% end %>
+If Already Register: <%= link_to "Login", root_path, class:"login_register" %>
+</div>
+</div>

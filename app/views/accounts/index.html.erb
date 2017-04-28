@@ -1,0 +1,6 @@
+<% @accounts.each do |a| %>
+	<%= a.name %>
+	<%= a.balance %>
+	<%= a.money_type %>
+	<%= link_to "delete", a, method: :delete %><br>
+<% end %>
